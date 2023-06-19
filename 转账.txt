@@ -1,0 +1,31 @@
+void zz()// 转账 
+{
+	int q;
+	float m; 
+	printf("请输入目标账户:");
+	scanf("%d",&q);
+	printf("请输入转账金额:");
+	scanf("%f",&m);
+	for(i=0;i<=9;i++)
+	{
+		if(q==a[i].id)
+		{
+			printf("目标存在\n");
+			if(m<a[z].m)
+			{
+				a[z].m=a[z].m-m;
+				a[i].m=a[i].m+m;
+				printf("用户转账成功");
+				printf("用户剩余:%.2f\n",a[z].m);
+				break; 
+			}
+			else
+			{
+				printf("账户余额不够\n");
+				break; 
+			}
+		}
+	}
+	if(i==10)
+	printf("用户不存在\n");
+}

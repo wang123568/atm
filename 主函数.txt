@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<process.h>
+#include<windows.h>
+struct user
+ {
+ 	int id;
+ 	char name[50];
+ 	int key;
+ 	float m;
+} a[10];
+typedef struct user USER;
+FILE *fp;
+int d=0,i=0,c=0;
+int z;
+
+int show()//功能界面 
+{
+	int s;
+	printf("|欢迎：%s                                 | \n",a[z].name);Sleep(50);
+	printf("|    【1】修改密码                        | \n");Sleep(50);
+	printf("|    【2】余额查询                        | \n");Sleep(50);
+	printf("|    【3】取款                            | \n");Sleep(50);
+	printf("|    【4】转账                            | \n");Sleep(50);
+	printf("|    【5】退卡                            | \n");Sleep(50); 
+	printf("     请选择要执行的操作:");Sleep(50);
+	scanf("%d",&s);
+	return s;
+}
